@@ -1,0 +1,9 @@
+<div class="col-xs-12">
+  <h1>{{ title }}</h1>
+  <input type="text" name="" value="" [(ngModel)]="serverData">
+  <button class="btn btn-warning" [disabled]="!allowNewServerBtn" (click)="onLoadServerData();">Botón de prueba {{ allowNewServerBtn }}</button>
+  <p [innerText]="allowNewServerBtn"></p>
+  <p>-- {{ allowNewServerBtn }} --</p>
+  <p>{{ serverData }}</p>
+  <hr>
+</div>
